@@ -12,6 +12,12 @@ gulp.task('compile-less',async function(){
     .pipe(gulp.dest('www/tmp'))
 });
 
+gulp.task('compile-coffee',async function(){
+    gulp.src('./www/dist/private/scripts/*.coffee')
+    .pipe(coffee())
+    .pipe(gulp.dest('./www/tmp'));
+})
+
 gulp.task('minify-css',async function(){
     return gulp.src('www/tmp/*.css')
     .pipe(sourcemaps.init())
@@ -19,12 +25,6 @@ gulp.task('minify-css',async function(){
     .pipe(sourcemaps.write('mapping'))
     .pipe(gulp.dest('./www/dist/public/styles'));
 });
-
-gulp.task('compile-coffee',async function(){
-    gulp.src('./www/dist/private/scripts/*.coffee')
-    .pipe(coffee())
-    .pipe(gulp.dest('./www/tmp'));
-})
 
 gulp.task('minify-js',async function() {
         gulp.src('www/tmp/*.js')
