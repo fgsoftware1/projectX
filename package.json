@@ -11,6 +11,7 @@
     "gulp-minify": "^3.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
+    "karma": "^6.3.2",
     "readable-stream": "^3.6.0",
     "yarn": "^1.22.10"
   },
