@@ -14,10 +14,12 @@
     "readable-stream": "^3.6.0"
   },
   "devDependencies": {
-    "gulp-clean-css": "^4.3.0"
+    "eslint": "^7.25.0",
+    "gulp-clean-css": "^4.3.0",
+    "snyk": "^1.586.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "snyk test"
   },
   "repository": {
     "type": "git",
