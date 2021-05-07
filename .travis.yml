@@ -1,1 +1,6 @@
 language: generic
+env: 
+  export CODACY_PROJECT_TOKEN=<your project API token>
+after_success:
+  bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
+  
