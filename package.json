@@ -5,6 +5,7 @@
   "main": "index.html",
   "dependencies": {
     "bootstrap": "^5.0.0",
+    "bower": "^1.8.12",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-coffee": "^3.0.3",
@@ -13,6 +14,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
+    "jquery-ui": "^1.12.1",
     "js2coffee": "^2.2.0",
     "karma": "^6.3.2",
     "readable-stream": "^3.6.0",
@@ -26,14 +28,12 @@
   "scripts": {
     "test": "snyk test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fgsoftware1/projectX.git"
-  },
+  "repository": "git+https://github.com/fgsoftware1/projectX.git",
   "author": "Gabriel Aguiar",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fgsoftware1/projectX/issues"
   },
-  "homepage": "https://github.com/fgsoftware1/projectX#readme"
+  "homepage": "https://github.com/fgsoftware1/projectX#readme",
+  "private": false
 }
