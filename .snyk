@@ -29,4 +29,8 @@ ignore:
     - gulp-sourcemaps > @gulp-sourcemaps/identity-map > postcss:
         reason: no fix available
         expires: '2021-06-06T21:19:27.735Z'
+  SNYK-JS-GLOBPARENT-1016905:
+    - gulp > glob-watcher > chokidar > glob-parent:
+        reason: no fix available
+        expires: '2021-06-07T18:04:16.904Z'
 patch: {}
