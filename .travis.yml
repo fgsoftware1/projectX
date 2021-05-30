@@ -11,7 +11,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token:
-    secure: "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"
+    secure: ""
   keep_history: true
   on:
     branch: projectx.github.io
