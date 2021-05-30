@@ -3,6 +3,7 @@ services:
   - docker
 env: 
   - export CODACY_PROJECT_TOKEN=9a6ad026f80f4b8e8047fb617ec63e2a
+  - export GITHUB_PAGES_TOKEN=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
 before_install:
   - docker build -t projectx:latest .
 after_success:
