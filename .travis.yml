@@ -6,9 +6,12 @@ env:
 before_install:
   - docker build -t projectx:latest .
 after_success:
-<<<<<<< HEAD
-bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
-=======
-  bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
->>>>>>> a304ec9da2bd27245bb27d1ab37b5a52b2ec8b57
+  - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 
+  keep_history: true
+  on:
+    branch: main
   
