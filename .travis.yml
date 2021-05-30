@@ -10,8 +10,9 @@ after_success:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: 
+  github_token:
+    secure: "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"
   keep_history: true
   on:
-    branch: main
+    branch: projectx.github.io
   
