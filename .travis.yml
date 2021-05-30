@@ -1,0 +1,17 @@
+language: generic
+services:
+  - docker
+env: 
+  - export CODACY_PROJECT_TOKEN=9a6ad026f80f4b8e8047fb617ec63e2a
+before_install:
+  - docker build -t projectx:latest .
+after_success:
+bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
+  deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 
+  keep_history: true
+  on:
+    branch: main
+  
