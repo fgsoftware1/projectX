@@ -13,5 +13,5 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
   github_token: 
   keep_history: true
   on:
-    branch: main
+    branch: projectx.github.io
   
