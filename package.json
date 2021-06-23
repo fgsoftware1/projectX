@@ -17,7 +17,7 @@
     "jquery": "^3.6.0",
     "jquery-ui": "^1.12.1",
     "js2coffee": "^2.2.0",
-    "karma": "^6.3.2",
+    "karma": "^6.3.3",
     "postcss": "^8.3.0",
     "readable-stream": "^3.6.0",
     "yarn": "^1.22.10"
