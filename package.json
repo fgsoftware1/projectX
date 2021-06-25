@@ -30,7 +30,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "mocha": "^9.0.1",
-    "snyk": "^1.586.0"
+    "snyk": "^1.646.0"
   },
   "scripts": {
     "test": "snyk test"
