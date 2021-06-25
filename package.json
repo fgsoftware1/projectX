@@ -5,9 +5,7 @@
   "main": "index.html",
   "dependencies": {
     "bootstrap": "^5.0.1",
-    "bower": "^1.8.12",
     "coffee": "^5.4.0",
-    "firebase": "^8.6.4",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-coffee": "^3.0.3",
     "gulp-less": "^4.0.1",
@@ -16,7 +14,6 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
     "jquery-ui": "^1.12.1",
-    "js2coffee": "^2.2.0",
     "karma": "^6.3.3",
     "postcss": "^8.3.0",
     "readable-stream": "^3.6.0",
