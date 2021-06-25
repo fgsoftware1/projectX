@@ -1,4 +1,2 @@
-(function() {
-
-
-}).call(this);
+(function () {}).call(this);
+//# sourceMappingURL=mapping/main.js.map

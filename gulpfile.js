@@ -4,6 +4,7 @@ var coffee = require("gulp-coffee");
 var cleanCSS = require("gulp-clean-css");
 var uglify = require("gulp-uglify");
 var sourcemaps = require("gulp-sourcemaps");
+var babel = require("gulp-babel");
 
 gulp.task('compile-less',async function(){
     return gulp
@@ -24,6 +25,14 @@ gulp.task('minify-css',async function(){
     .pipe(cleanCSS())
     .pipe(sourcemaps.write('mapping'))
     .pipe(gulp.dest('./www/dist/public/styles'));
+});
+
+gulp.task("babel", function () {
+    return gulp.src(['*.js','./www/tmp/*.js'])
+      .pipe(sourcemaps.init())
+      .pipe(babel())
+      .pipe(sourcemaps.write("mapping"))
+      .pipe(gulp.dest("./www/tmp"));
 });
 
 gulp.task('minify-js',async function() {
