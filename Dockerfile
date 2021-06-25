@@ -1,2 +1,5 @@
-FROM httpd:2.4
-COPY ./www/dist/ /usr/local/apache2/htdocs/
+FROM golang:1.16
+
+COPY . .
+RUN go build
+RUN go main.go run
