@@ -6,4 +6,3 @@ after_success:
 go: 
   - master
 script: go build main.go
-script: go run main.go
