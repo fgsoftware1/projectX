@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.css"],"names":[],"mappings":"AAAA,cACE,MAAO","file":"../main.css","sourcesContent":["@-ms-viewport {\n  width: device-width;\n}\n"]}
+{"version":3,"sources":["main.css"],"names":[],"mappings":"AAAA,cACE,MAAO","file":"../main.css","sourcesContent":["@-ms-viewport {\r\n  width: device-width;\r\n}\r\n"]}
