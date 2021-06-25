@@ -1,9 +1,9 @@
 dist: xenial
 language: go
+go: 
+  - master
 env: 
   - export CODACY_PROJECT_TOKEN=9a6ad026f80f4b8e8047fb617ec63e2a
 after_success:
   - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
-go: 
-  - master
 script: go build main.go
