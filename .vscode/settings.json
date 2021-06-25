@@ -1,13 +1,9 @@
 {
-    "files.autoSave": "afterDelay",
-    "terminal.integrated.defaultProfile.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "explorer.confirmDelete": false,
-    "C_Cpp.updateChannel": "Insiders",
     "git.autofetch": true,
     "explorer.confirmDragAndDrop": false,
     "git.confirmSync": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "codeQL.telemetry.enableTelemetry": true,
     "workbench.iconTheme": "material-icon-theme",
     "search.exclude": {
         "**/bower_components": false,

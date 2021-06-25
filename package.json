@@ -6,6 +6,7 @@
   "dependencies": {
     "bootstrap": "^5.0.1",
     "coffee": "^5.4.0",
+    "core-js": "^3.15.1",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-coffee": "^3.0.3",
     "gulp-less": "^4.0.1",
@@ -17,6 +18,7 @@
     "karma": "^6.3.3",
     "postcss": "^8.3.0",
     "readable-stream": "^3.6.0",
+    "regenerator-runtime": "^0.13.7",
     "yarn": "^1.22.10"
   },
   "devDependencies": {
