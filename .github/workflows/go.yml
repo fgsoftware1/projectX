@@ -19,9 +19,7 @@ jobs:
         go-version: 1.16
 
     - name: Build
-      run: go build main.go
-      run: go build ./utils/gulpfile.go
+      run: go build main.go ./utils/gulpfile.go
 
     - name: Test
-      run: go test main.go
-      run: go test ./utils/gulpfile.go
+      run: go test main.go ./utils/gulpfile.go
