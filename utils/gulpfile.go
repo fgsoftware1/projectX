@@ -1,7 +1,10 @@
 package main
 
-import "os/exec"
+import (
+	"os/exec"
+)
 
 func main() {
-	cmd exec.Command("gulp compile-less compile-coffee babel minify-js minify-css").Output()
+	cmd := exec.Command("gulp compile-less compile-coffee babel minify-js minify-css")
+	cmd.Run()
 }
