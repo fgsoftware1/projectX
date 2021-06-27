@@ -1,11 +1,3 @@
 {
-    "presets": [
-        "es2021",
-        "env",
-        "@babel/preset-env",
-        "@babel/env"
-      ],
-      "plugins": [
-        "karma-babel-preprocessor"
-      ]
+    "presets": ["@babel/preset-env"]
 }
