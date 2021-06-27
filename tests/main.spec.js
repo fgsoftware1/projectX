@@ -1,10 +1,12 @@
-import CoverageBabel from './index'
+function one(){
+    return 1;
+}
 
-require('chai').should()
+function two(){
+    return 2;
+}
 
-describe('CoverageBabel', function () {
-  it('returns hello world message', function () {
-    const cls = new CoverageBabel('Ben')
-    cls.helloMessage().should.equal('hello Ben')
-  })
-})
+export default {
+    one,
+    two
+}
