@@ -29,6 +29,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "karma": "^6.3.4",
+    "karma-mocha": "^2.0.1",
     "snyk": "^1.646.0"
   },
   "scripts": {
