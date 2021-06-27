@@ -37,10 +37,7 @@
   "scripts": {
     "test": "snyk test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fgsoftware1/projectX.git"
-  },
+  "repository": "git+https://github.com/fgsoftware1/projectX.git",
   "author": "Gabriel Aguiar",
   "license": "MIT",
   "bugs": {
