@@ -1,36 +1,4 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.19.0
-# ignores vulnerabilities until expiry date; change duration by modifying expiry date
-ignore:
-  SNYK-JS-PATHPARSE-1077067:
-    - gulp > gulp-cli > liftoff > rechoir > resolve > path-parse:
-        reason: no fix available
-        expires: '2021-06-06T21:19:27.734Z'
-    - gulp > gulp-cli > yargs > read-pkg-up > read-pkg > normalize-package-data > resolve > path-parse:
-        reason: no fix available
-        expires: '2021-06-06T21:19:27.735Z'
-  SNYK-JS-POSTCSS-1090595:
-    - gulp-autoprefixer > postcss:
-        reason: no fix available
-        expires: '2021-06-06T21:19:27.735Z'
-    - gulp-autoprefixer > autoprefixer > postcss:
-        reason: no fix available
-        expires: '2021-06-06T21:19:27.735Z'
-    - gulp-sourcemaps > @gulp-sourcemaps/identity-map > postcss:
-        reason: no fix available
-        expires: '2021-06-06T21:19:27.735Z'
-  SNYK-JS-POSTCSS-1255640:
-    - gulp-autoprefixer > postcss:
-        reason: no fix available
-        expires: '2021-06-06T21:19:27.735Z'
-    - gulp-autoprefixer > autoprefixer > postcss:
-        reason: no fix available
-        expires: '2021-06-06T21:19:27.735Z'
-    - gulp-sourcemaps > @gulp-sourcemaps/identity-map > postcss:
-        reason: no fix available
-        expires: '2021-06-06T21:19:27.735Z'
-  SNYK-JS-GLOBPARENT-1016905:
-    - gulp > glob-watcher > chokidar > glob-parent:
-        reason: no fix available
-        expires: '2021-06-07T18:04:16.904Z'
+ignore: {}
 patch: {}
