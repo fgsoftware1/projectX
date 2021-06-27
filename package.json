@@ -41,7 +41,7 @@
     "snyk": "^1.646.0"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "nyc mocha",
     "coverage": "nyc npm run test",
     "cover:merge": "npm run cover:unit && npm run cover:integration && nyc merge .nyc_output coverage.json",
     "build": "babel index.js -d src",
@@ -56,7 +56,11 @@
       "text"
     ],
     "sourceMap": false,
-    "instrument": false
+    "instrument": false,
+    "branches": "&gt;80",
+    "lines": "&gt;80",
+    "functions": "&gt;80",
+    "statements": "&gt;80"
   },
   "repository": "git+https://github.com/fgsoftware1/projectX.git",
   "author": "Gabriel Aguiar",
