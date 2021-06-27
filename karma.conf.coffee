@@ -20,7 +20,7 @@ module.exports = (config) ->
     colors: true
     logLevel: config.LOG_INFO
     autoWatch: true
-    browsers: ['Brave']
+    browsers: []
     singleRun: false
     concurrency: Infinity
   return
