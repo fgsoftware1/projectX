@@ -1,3 +1,11 @@
 {
-    "presets": ["@babel/preset-env"]
+    "presets": [
+        "es2015",
+        "env",
+        "@babel/preset-env",
+        "@babel/env"
+      ],
+      "plugins": [
+        "karma-babel-preprocessor"
+      ]
 }
