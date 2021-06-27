@@ -1,2 +1,2 @@
 !function(){}.call(this);
-//# sourceMappingURL=mapping/main.js.map
+//# sourceMappingURL=../mapping/main.js.map
