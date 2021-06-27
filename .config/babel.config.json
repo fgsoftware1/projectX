@@ -1,6 +1,6 @@
 {
     "presets": [
-        "es2015",
+        "es2021",
         "env",
         "@babel/preset-env",
         "@babel/env"
