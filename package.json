@@ -14,7 +14,6 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
     "jquery-ui": "^1.12.1",
-    "node-go2js": "0.0.6",
     "npm": "^7.19.0",
     "postcss": "^8.3.5",
     "readable-stream": "^3.6.0",
@@ -38,7 +37,8 @@
   },
   "scripts": {
     "test": "mocha",
-    "coverage": "nyc npm run test"
+    "coverage": "nyc npm run test",
+    "cover:merge": "npm run cover:unit && npm run cover:integration && nyc merge .nyc_output coverage.json"
   },
   "repository": "git+https://github.com/fgsoftware1/projectX.git",
   "author": "Gabriel Aguiar",
