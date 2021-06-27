@@ -4,7 +4,17 @@ module.exports = (config) ->
     frameworks: [ 'mocha' ]
     files: []
     exclude: []
-    preprocessors: {}
+    preprocessors: {},
+    preprocessors: {
+      "www/public/**/*.js": ["babel"],
+      "tests/**/*.js": ["babel"]
+    },
+    babelPreprocessor: {
+      options: {
+        presets: ["@babel/preset-env"],
+        sourceMap: "inline"
+      },
+    },
     reporters: [ 'progress' ]
     port: 9876
     colors: true
