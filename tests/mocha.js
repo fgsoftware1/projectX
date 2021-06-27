@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 // mocha@9.0.1 transpiled to javascript ES5
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
