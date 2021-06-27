@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.css"],"names":[],"mappings":"iBACA,cACE,MAAO,KAET,oCACE,KACE,MAAO","file":"../tmp/main.css","sourcesContent":["@charset \"utf-8\";\n@-ms-viewport {\n  width: auto;\n}\n@media screen and (max-width: 320px) {\n  body {\n    width: 320px;\n  }\n}\n"]}
