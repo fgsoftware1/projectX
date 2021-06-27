@@ -1,7 +1,12 @@
 {
   "env": {
     "test": {
-      "plugins": [ "istanbul" ]
+      "plugins": [ "istanbul",{
+        "useInlineSourceMaps": false,
+        "exclude": [
+          "**/*.spec.js"
+        ]
+      }]
     }
   },
   "presets": [
