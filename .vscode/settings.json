@@ -7,7 +7,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "search.exclude": {
         "**/bower_components": false,
-        "**/node_modules": false
+        "**/node_modules": true
     },
     "npm.exclude": ""
 }
