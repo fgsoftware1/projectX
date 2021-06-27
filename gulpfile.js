@@ -7,8 +7,7 @@ var sourcemaps = require("gulp-sourcemaps");
 var babel = require("gulp-babel");
 
 gulp.task('compile-less',async function(){
-    return gulp
-    .src(['./www/dist/private/*.less'])
+    gulp.src('./www/dist/private/*.less')
     .pipe(gulpless())
     .pipe(gulp.dest('www/tmp'))
 });
@@ -20,7 +19,7 @@ gulp.task('compile-coffee',async function(){
 })
 
 gulp.task('minify-css',async function(){
-    return gulp.src('www/tmp/*.css')
+    gulp.src('www/tmp/*.css')
     .pipe(sourcemaps.init())
     .pipe(cleanCSS())
     .pipe(sourcemaps.write('mapping'))
@@ -28,11 +27,11 @@ gulp.task('minify-css',async function(){
 });
 
 gulp.task("babel", function () {
-    return gulp.src(['/www/tmp/*.js'])
-      .pipe(sourcemaps.init())
-      .pipe(babel())
-      .pipe(sourcemaps.write("mapping"))
-      .pipe(gulp.dest("./www/tmp"));
+    gulp.src('/www/tmp/*.js')
+    .pipe(sourcemaps.init())
+    .pipe(babel())
+    .pipe(sourcemaps.write("mapping"))
+    .pipe(gulp.dest("./www/tmp"));
 });
 
 gulp.task('minify-js',async function() {
