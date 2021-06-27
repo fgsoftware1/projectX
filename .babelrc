@@ -3,6 +3,9 @@
     "test": {
       "plugins": [ "istanbul",{
         "useInlineSourceMaps": false,
+        "include": [
+          "src/**/*.js"
+        ],
         "exclude": [
           "**/*.spec.js"
         ]
