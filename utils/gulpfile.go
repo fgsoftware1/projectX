@@ -3,5 +3,5 @@ package main
 import "os/exec"
 
 func main() {
-	exec.Command("gulp compile-less compile-coffee minify-css babel minify-js").Run()
+	exec.Command("cmd /c gulp compile-less compile-coffee babel minify-js minify-css").Output()
 }
