@@ -41,11 +41,7 @@
     "snyk": "^1.646.0"
   },
   "scripts": {
-    "test": "nyc mocha",
-    "coverage": "nyc npm run test",
-    "cover:merge": "npm run cover:unit && npm run cover:integration && nyc merge .nyc_output coverage.json",
-    "build": "babel index.js -d src",
-    "prepublish": "npm run build"
+    "test": ""
   },
   "nyc": {
     "require": [
@@ -62,7 +58,10 @@
     "functions": "&gt;80",
     "statements": "&gt;80"
   },
-  "repository": "git+https://github.com/fgsoftware1/projectX.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgsoftware1/projectX.git"
+  },
   "author": "Gabriel Aguiar",
   "license": "MIT",
   "bugs": {
@@ -72,5 +71,8 @@
   "private": false,
   "keywords": [
     "projectx"
-  ]
+  ],
+  "directories": {
+    "test": "tests"
+  }
 }
