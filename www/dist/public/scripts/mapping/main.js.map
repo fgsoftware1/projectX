@@ -1,1 +1,1 @@
-{"version":3,"file":"../main.js","sources":["main.js"],"sourcesContent":["\"use strict\";\n\n(function () {}).call(void 0);\n//# sourceMappingURL=mapping/main.js.map\n"],"names":["call"],"mappings":"cAEA,aAAiBA,UAAK"}
+{"version":3,"file":"../main.js","sources":["main.js"],"sourcesContent":["(function() {\n\n\n}).call(this);\n"],"names":["call","this"],"mappings":"CAAA,aAGGA,KAAKC"}
