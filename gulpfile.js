@@ -22,15 +22,14 @@ gulp.task('minify-css',async function(){
     gulp.src('www/tmp/*.css')
     .pipe(sourcemaps.init())
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write('mapping'))
+    .pipe(sourcemaps.write('www/dist/public/mapping'))
     .pipe(gulp.dest('./www/dist/public/styles'));
 });
 
-gulp.task("babel", function () {
+gulp.task("babel",async function () {
     gulp.src('/www/tmp/*.js')
     .pipe(sourcemaps.init())
     .pipe(babel())
-    .pipe(sourcemaps.write("mapping"))
     .pipe(gulp.dest("./www/tmp"));
 });
 
@@ -38,6 +37,6 @@ gulp.task('minify-js',async function() {
         gulp.src('www/tmp/*.js')
         .pipe(sourcemaps.init())
         .pipe(uglify())
-        .pipe(sourcemaps.write('mapping'))
+        .pipe(sourcemaps.write('../mapping'))
         .pipe(gulp.dest('./www/dist/public/scripts'))
 });
