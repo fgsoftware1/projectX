@@ -6,4 +6,10 @@ env:
   - export CODACY_PROJECT_TOKEN=9a6ad026f80f4b8e8047fb617ec63e2a
 after_success:
   - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
-script: go build main.go
+deploy:
+  provider: pages
+  skip_cleanup: true
+  token: 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
+  keep_history: true
+  on:
+    branch: projectx.github.io
