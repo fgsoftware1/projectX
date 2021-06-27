@@ -5,6 +5,7 @@
   "main": "index.html",
   "dependencies": {
     "bootstrap": "^5.0.2",
+    "chokidar": "^3.5.2",
     "core-js": "^3.15.1",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-coffee": "^3.0.3",
@@ -20,11 +21,14 @@
     "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.5",
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
     "@babel/register": "^7.14.5",
     "@istanbuljs/nyc-config-babel": "^3.0.0",
     "babel-plugin-istanbul": "^6.0.0",
+    "chai": "^4.3.4",
+    "cross-env": "^7.0.3",
     "eslint": "^7.29.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
@@ -39,7 +43,20 @@
   "scripts": {
     "test": "mocha",
     "coverage": "nyc npm run test",
-    "cover:merge": "npm run cover:unit && npm run cover:integration && nyc merge .nyc_output coverage.json"
+    "cover:merge": "npm run cover:unit && npm run cover:integration && nyc merge .nyc_output coverage.json",
+    "build": "babel index.js -d src",
+    "prepublish": "npm run build"
+  },
+  "nyc": {
+    "require": [
+      "@babel/register"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "sourceMap": false,
+    "instrument": false
   },
   "repository": "git+https://github.com/fgsoftware1/projectX.git",
   "author": "Gabriel Aguiar",
