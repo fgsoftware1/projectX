@@ -5,7 +5,6 @@
   "main": "index.html",
   "dependencies": {
     "bootstrap": "^5.0.2",
-    "coffee": "^5.4.0",
     "core-js": "^3.15.1",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-coffee": "^3.0.3",
