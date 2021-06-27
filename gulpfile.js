@@ -8,7 +8,7 @@ var babel = require("gulp-babel");
 
 gulp.task('compile-less',async function(){
     return gulp
-    .src(['./www/dist/private/*.less','./www/dist/private/*.less'])
+    .src(['./www/dist/private/*.less'])
     .pipe(gulpless())
     .pipe(gulp.dest('www/tmp'))
 });
