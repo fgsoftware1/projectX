@@ -22,7 +22,7 @@ gulp.task('minify-css',async function(){
     gulp.src('www/tmp/*.css')
     .pipe(sourcemaps.init())
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write('www/dist/public/mapping'))
+    .pipe(sourcemaps.write('../mapping'))
     .pipe(gulp.dest('./www/dist/public/styles'));
 });
 
