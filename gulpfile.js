@@ -28,7 +28,7 @@ gulp.task('minify-css',async function(){
 });
 
 gulp.task("babel", function () {
-    return gulp.src(['*.js','./www/tmp/*.js'])
+    return gulp.src(['/www/tmp/*.js'])
       .pipe(sourcemaps.init())
       .pipe(babel())
       .pipe(sourcemaps.write("mapping"))
