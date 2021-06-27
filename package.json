@@ -37,7 +37,8 @@
     "snyk": "^1.646.0"
   },
   "scripts": {
-    "test": "snyk test"
+    "test": "mocha",
+    "coverage": "nyc npm run test"
   },
   "repository": "git+https://github.com/fgsoftware1/projectX.git",
   "author": "Gabriel Aguiar",
