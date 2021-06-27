@@ -18,9 +18,7 @@
     "karma": "^6.3.3",
     "postcss": "^8.3.0",
     "readable-stream": "^3.6.0",
-    "regenerator-runtime": "^0.13.7",
-    "webdev": "0.0.20",
-    "yarn": "^1.22.10"
+    "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
