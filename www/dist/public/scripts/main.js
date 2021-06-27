@@ -1,2 +1,2 @@
-"use strict";!function(){}.call(void 0);
+!function(){}.call(this);
 //# sourceMappingURL=mapping/main.js.map
