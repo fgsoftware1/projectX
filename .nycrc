@@ -1,6 +1,6 @@
 {
-  "extends": "@istanbuljs/nyc-config-typescript",
-  "check-coverage": true
+  "extends": "@istanbuljs/nyc-config-babel",
+  "check-coverage": true,
   "all": true,
   "include": [
     "src/**/*.js"
