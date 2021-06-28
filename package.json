@@ -16,6 +16,7 @@
     "chai": "^4.3.4",
     "cross-env": "^7.0.3",
     "eslint": "^7.29.0",
+    "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
@@ -38,22 +39,7 @@
     "snyk": "^1.646.0"
   },
   "scripts": {
-    "test": "nyc mocha"
-  },
-  "nyc": {
-    "require": [
-      "@babel/register"
-    ],
-    "reporter": [
-      "lcov",
-      "text"
-    ],
-    "sourceMap": false,
-    "instrument": false,
-    "branches": "&gt;80",
-    "lines": "&gt;80",
-    "functions": "&gt;80",
-    "statements": "&gt;80"
+    "test": "npx mocha --require esm --reporter spec test/"
   },
   "repository": {
     "type": "git",
@@ -68,8 +54,5 @@
   "private": false,
   "keywords": [
     "projectx"
-  ],
-  "directories": {
-    "test": "tests"
-  }
+  ]
 }
