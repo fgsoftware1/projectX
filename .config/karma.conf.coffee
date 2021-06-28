@@ -15,12 +15,21 @@ module.exports = (config) ->
         sourceMap: "inline"
       },
     },
-    reporters: [ 'progress' ]
+    reporters: [ 'progress' ],
+    coverageReporter: {
+      type : 'html',
+      dir : 'coverage/'
+      reporters: [
+        // reporters not supporting the `file` property
+        { type: 'html', subdir: 'html-report' },
+        { type: 'lcov', subdir: 'lcov-report' },
+      ]
+    },
     port: 9876
     colors: true
     logLevel: config.LOG_INFO
     autoWatch: true
-    browsers: []
+    browsers: ['brave']
     singleRun: false
     concurrency: Infinity
   return
