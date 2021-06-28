@@ -48,7 +48,7 @@
     "snyk": "^1.646.0"
   },
   "scripts": {
-    "test": "mocha --require babel-polyfill --require babel-register"
+    "test": "mocha --require babel-polyfill --require @babel-register"
   },
   "repository": {
     "type": "git",
