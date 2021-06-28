@@ -20,7 +20,6 @@ module.exports = (config) ->
       type : 'html',
       dir : 'coverage/'
       reporters: [
-        // reporters not supporting the `file` property
         { type: 'html', subdir: 'html-report' },
         { type: 'lcov', subdir: 'lcov-report' },
       ]
@@ -29,7 +28,7 @@ module.exports = (config) ->
     colors: true
     logLevel: config.LOG_INFO
     autoWatch: true
-    browsers: ['brave']
+    browsers: ['Brave']
     singleRun: false
     concurrency: Infinity
   return
