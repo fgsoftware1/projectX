@@ -1,3 +1,4 @@
 /node_modules
 /jquery
 /jquery-ui
+/.nyc_output
