@@ -54,7 +54,7 @@
     "snyk": "^1.646.0"
   },
   "scripts": {
-    "test": "mocha --require babel-register"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
