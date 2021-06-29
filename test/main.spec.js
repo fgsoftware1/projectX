@@ -1,5 +1,5 @@
-const assert = require('chai').assert;
-const app = require('./main');
+import { assert } from 'chai';
+import app from './main';
 
 describe('App', function(){
     it('app should return hello', function(){
