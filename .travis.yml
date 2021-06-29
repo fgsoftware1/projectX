@@ -13,6 +13,6 @@ script:
   - bundle exec rspec
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-before_build:
+after_sucess:
   - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
   - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/**
