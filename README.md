@@ -8,7 +8,5 @@
 
 [![Build Status](https://travis-ci.com/fgsoftware1/projectX.svg?branch=master)](https://travis-ci.com/fgsoftware1/projectX)
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffgsoftware1%2FprojectX.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffgsoftware1%2FprojectX?ref=badge_shield)
-
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffgsoftware1%2FprojectX.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffgsoftware1%2FprojectX?ref=badge_large)
