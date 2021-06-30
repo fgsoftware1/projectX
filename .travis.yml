@@ -9,12 +9,6 @@ jobs:
       after_sucess:
       - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
 
-    - language: go
-      go:
-      - master
-      script: 
-      - go build ./utils/*.go
-
 #    - language: dart
 #        dart:
 #        - stable
