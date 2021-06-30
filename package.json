@@ -55,7 +55,7 @@
     "snyk": "^1.646.0"
   },
   "scripts": {
-    "test": "nyc mocha test/app.spec.js --exit",
+    "test": "nyc --all mocha",
     "coverage": "coveralls && nyc ./**/*.js report --reporter=lcov"
   },
   "repository": {
