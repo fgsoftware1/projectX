@@ -1,7 +1,18 @@
 os: linux
 dist: xenial
-language: generic
 env: 
   - export CODACY_PROJECT_TOKEN=9a6ad026f80f4b8e8047fb617ec63e2a
-after_sucess:
-  - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
+jobs:
+  include:
+    - language: generic
+      after_sucess:
+      - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
+
+    - language: go
+      go: 
+      - master
+      script: go build utils/*.go
+
+#    - language: dart
+#        dart:
+#        - stable
