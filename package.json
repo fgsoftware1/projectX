@@ -10,7 +10,8 @@
     "npm": "^7.19.0",
     "postcss": "^8.3.5",
     "readable-stream": "^3.6.0",
-    "regenerator-runtime": "^0.13.7"
+    "regenerator-runtime": "^0.13.7",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
@@ -42,18 +43,11 @@
     "karma-coffee-preprocessor": "^1.0.1",
     "karma-coverage": "^2.0.3",
     "karma-mocha": "^2.0.1",
-    "mocha": "^9.0.1",
-    "nyc": "^15.1.0",
     "requirejs": "^2.3.6",
     "snyk": "^1.646.0"
   },
-  "jest": {
-    "collectCoverage": true,
-    "coverageReporters": ["json", "html","lcov"]
-  },
   "scripts": {
-    "test": "mocha",
-    "coverage": "nyc mocha --reporter=lcov && jest npm run test"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
