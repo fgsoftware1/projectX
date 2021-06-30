@@ -53,7 +53,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "coverage": "nyc mocha  && jest npm run test"
+    "coverage": "nyc mocha --reporter=lcov && jest npm run test"
   },
   "repository": {
     "type": "git",
