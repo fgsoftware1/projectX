@@ -1,7 +1,7 @@
 {
-  "extends": "@istanbuljs/nyc-config-babel",
-  "check-coverage": true,
   "all": true,
+  "useSpawnWrap": true,
+  "check-coverage": true,
   "include": [
     "./**/*.js"
   ],
