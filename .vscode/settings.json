@@ -1,13 +1,33 @@
 {
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "explorer.confirmDelete": false,
-    "git.autofetch": true,
-    "explorer.confirmDragAndDrop": false,
-    "git.confirmSync": false,
     "workbench.iconTheme": "material-icon-theme",
-    "search.exclude": {
-        "**/bower_components": false,
-        "**/node_modules": false
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "afterDelay",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
     },
-    "npm.exclude": ""
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "files.exclude": {
+        ".nyc_output": true,
+        "node_modules": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
