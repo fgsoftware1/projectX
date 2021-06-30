@@ -4,7 +4,6 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/41dae3d72479499db46eeac64c1f01fd)](https://www.codacy.com/gh/fgsoftware1/projectX/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fgsoftware1/projectX&amp;utm_campaign=Badge_Coverage)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/601c3ea8f3f02f9f77bd/maintainability)](https://codeclimate.com/github/fgsoftware1/projectX/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/601c3ea8f3f02f9f77bd/test_coverage)](https://codeclimate.com/github/fgsoftware1/projectX/test_coverage)
 
 [![Build Status](https://travis-ci.com/fgsoftware1/projectX.svg?branch=master)](https://travis-ci.com/fgsoftware1/projectX)
 
