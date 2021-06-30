@@ -6,11 +6,8 @@ env:
 jobs:
   include:
     - language: generic
-      go:
-        - master
       after_sucess:
       - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
-      - go build utils/server.go
 
 #    - language: dart
 #        dart:
