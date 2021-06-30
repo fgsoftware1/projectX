@@ -3,7 +3,7 @@
   "check-coverage": true,
   "all": true,
   "include": [
-    "src/**/*.js"
+    "./**/*.js"
   ],
   "exclude": [
     "**/*.spec.js"
