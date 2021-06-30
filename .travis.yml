@@ -3,7 +3,7 @@ dist: xenial
 env:
   global:
     - export CODACY_PROJECT_TOKEN=9a6ad026f80f4b8e8047fb617ec63e2a
-    - CC_TEST_REPORTER_ID=
+    - CC_TEST_REPORTER_ID=f3a706d01a86b6d81baa28142b579a0e6dd798cc8e12059d982921e9aa9f73cb
 jobs:
   include:
     - language: generic
@@ -22,9 +22,9 @@ jobs:
       - npm run coverage
       - npm run coveralls
 
-    - language: go
-      script: 
-      - go build ./utils/*.go
+#    - language: go
+#      script: 
+#      - go build ./utils/*.go
 
 #    - language: dart
 #        dart:
