@@ -10,6 +10,7 @@ jobs:
       - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
 
     - language: go
+      - master
       script: 
       - go build ./utils/*.go
 
