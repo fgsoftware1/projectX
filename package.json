@@ -55,7 +55,9 @@
     "snyk": "^1.646.0"
   },
   "scripts": {
-    "test": "nyc mocha test/app.test.js --exit"
+    "test": "nyc mocha test/app.test.js --exit",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "coverage": "coveralls && nyc report --reporter=lcov"
   },
   "repository": {
     "type": "git",
