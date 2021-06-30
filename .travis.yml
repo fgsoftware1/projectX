@@ -3,15 +3,5 @@ dist: xenial
 language: generic
 env: 
   - export CODACY_PROJECT_TOKEN=9a6ad026f80f4b8e8047fb617ec63e2a
-  - export CC_TEST_REPORTER_ID=f3a706d01a86b6d81baa28142b579a0e6dd798cc8e12059d982921e9aa9f73cb
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
-script:
-  - bundle exec rspec
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 after_sucess:
   - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
-  - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/**
