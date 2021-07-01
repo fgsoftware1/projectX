@@ -8,14 +8,11 @@ jobs:
   include:
     - language: generic
       after_sucess:
-      - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
-    language: node_js
-    node_js:
-    - node
-    before_script:
-      - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-      - chmod +x ./cc-test-reporter
-      - ./cc-test-reporter before-build
-      - npm install -g jest
-    after_script:
-      - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+        - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
+      before_script:
+        - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+        - chmod +x ./cc-test-reporter
+        - ./cc-test-reporter before-build
+        - npm install -g jest
+      after_script:
+        - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
