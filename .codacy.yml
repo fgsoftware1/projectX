@@ -1,8 +1,8 @@
 exclude_paths:
   - ".github"
   - ".vscode"
-  - "coverage"
-  - "tests"
+  - "coverage/**"
+  - "tests/**"
 exclude_files:
   - ".editorconfig"
   - ".eslintrc"
@@ -11,3 +11,6 @@ exclude_files:
   - ".mocharc"
   - ".snyk"
   - ".travis.yml"
+  - ".babelrc"
+  - ".codeclimate.yml"
+  - "babel.config.js"
