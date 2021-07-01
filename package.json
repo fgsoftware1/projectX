@@ -51,19 +51,7 @@
     "snyk": "^1.652.0"
   },
   "scripts": {
-    "test": "jest --coverage"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    },
-    "collectCoverage": true,
-    "verbose": true,
-    "coverageReporters": [
-      "json",
-      "html",
-      "lcov"
-    ]
+    "test": "jest"
   },
   "repository": {
     "type": "git",
