@@ -15,6 +15,5 @@ jobs:
         - ./cc-test-reporter before-build
       after_script:
         - yarn jest test --coverage
-        - ./cc-test-reporter format-coverage -t lcov -o coverage/codeclimate.client.json coverage/lcov.info
-        - ./cc-test-reporter sum-coverage coverage/codeclimate.*.json
+        - ./cc-test-reporter report -r lcov coverage/lcov.info
         - ./cc-test-reporter upload-coverage || true
