@@ -13,5 +13,9 @@ jobs:
         - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
         - chmod +x ./cc-test-reporter
         - ./cc-test-reporter before-build
+      scripts:
+        - yarn jest test --coverage
       after_script:
-        - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+        - ./cc-test-reporter format-coverage -t lcov -o coverage/codeclimate.client.json coverage/lcov.info
+        - ./cc-test-reporter sum-coverage coverage/codeclimate.*.json
+        - ./cc-test-reporter upload-coverage || true
