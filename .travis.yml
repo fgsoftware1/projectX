@@ -3,10 +3,13 @@ dist: xenial
 env:
   global:
     - export CODACY_PROJECT_TOKEN=9a6ad026f80f4b8e8047fb617ec63e2a
-    - CC_TEST_REPORTER_ID=f3a706d01a86b6d81baa28142b579a0e6dd798cc8e12059d982921e9aa9f73cb
 jobs:
   include:
     - language: generic
+    addons:
+      code_climate:
+        repo_token:
+          secure: "brsmA3AmNF7Sr2CsihQcs3KeIJWknh+XlEeWP/5iMzUDQX/vpLzWGMXpbLcq8ccliSZ6YvoGdw28fmWdcL945W+loogcY7lSKnwzVsQH9RUcyerDxPHpOM81lmsZjhtWfuNNuvhBmntqn4aQ2LUdJEKlWTRUS+jDlMV5OZAxlo3FJp5OMbb/N07I3Otp7NpDENuzEKdVq4Sfc2hnRETJSKUE1qBsYV5/6cCsT4WvFneOpof+VgrhQxxsbx0BUCBiDJ7H2tKUQiUFK7IP4EXhw/XbmmQV/vk3Dt/a/uk0T5wNlpEWFI8EsAMmOUseWBFRQoctj67iZRHNpRiguTN9lGAVT+E0PxQAiymfbs+0XJSesieQxzJRoryse4oUXOe1AFpow+Jpyz/xzhfAJ725HaEtZwGPOTTm+qWFHG77OmBSEbQ0HiBhtwMGkFk1utdfikHPnmdfMXZdd5e6GU/vScQPwJevZKf8oKmQu9luKImBYMyRRL4RAMjNId0NqJRPK2+aRyQbHNscRfoEpJAMan4bxc6AQjTio+plkTbwP6pdv9ZckTKPxwYjjldaPNXF6cvQLzAQCYywQ0qaZhsIy9mNX1uA2SqhxSJcpcGVHf6itMWd64NBz1nSRWhzunAwJekfJxbrPWLvqQx51kgfYWCxMu18Eyr8aZPqZU6rAQ0="
       after_sucess:
         - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
       before_script:
