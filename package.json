@@ -46,11 +46,12 @@
     "karma-coffee-preprocessor": "^1.0.1",
     "karma-coverage": "^2.0.3",
     "karma-mocha": "^2.0.1",
+    "nyc": "^15.1.0",
     "requirejs": "^2.3.6",
     "snyk": "^1.652.0"
   },
   "scripts": {
-    "test": "jest --coverage --collectCoverage"
+    "test": "jest --coverage"
   },
   "jest": {
     "transform": {
@@ -64,18 +65,18 @@
       "lcov"
     ]
   },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/fgsoftware1/projectX.git"
-    },
-    "author": "Gabriel Aguiar",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/fgsoftware1/projectX/issues"
-    },
-    "homepage": "https://github.com/fgsoftware1/projectX#readme",
-    "private": false,
-    "keywords": [
-      "projectx"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgsoftware1/projectX.git"
+  },
+  "author": "Gabriel Aguiar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fgsoftware1/projectX/issues"
+  },
+  "homepage": "https://github.com/fgsoftware1/projectX#readme",
+  "private": false,
+  "keywords": [
+    "projectx"
+  ]
 }

@@ -1,7 +1,3 @@
-const config = {
-  verbose: true,
-};
-
 module.exports = {
   collectCoverage: true,
   verbose: true,
@@ -12,5 +8,4 @@ module.exports = {
   "lcov",
   "html"
   ],
-  watchman: true,
 };
