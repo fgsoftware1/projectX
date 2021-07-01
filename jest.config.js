@@ -5,7 +5,6 @@ module.exports = {
   "\\\\node_modules\\\\"
   ],
   coverageReporters: [
-  "html",
   "lcov"
   ],
   moduleDirectories: [
