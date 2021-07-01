@@ -1,48 +1,48 @@
-const chai = require('chai');
-const App = require('./app');
+import { should } from 'chai';
+import { add, substract, divide, multiply } from './app';
 
-chai.should();
+should();
 
 describe('Add two numbers', () => {
   it('Equals 4', () => {
-    const total = App.add(2, 2);
+    const total = add(2, 2);
     total.should.equal(4);
   });
   it('Equals -4', () => {
-    const total = App.add(-8, 4);
+    const total = add(-8, 4);
     total.should.equal(-4);
   });
 });
 
 describe('Substract two numbers', () => {
   it('Equals 5', () => {
-    const total = App.substract(7, 2);
+    const total = substract(7, 2);
     total.should.equal(5);
   });
   it('Equals 0', () => {
-    const total = App.substract(0, 0);
+    const total = substract(0, 0);
     total.should.equal(0);
   });
 });
 
 describe('Divide two numbers', () => {
   it('Equals 5', () => {
-    const total = App.divide(40, 8);
+    const total = divide(40, 8);
     total.should.equal(5);
   });
   it('Equals 0', () => {
-    const total = App.divide(10, 0);
+    const total = divide(10, 0);
     total.should.not.equal(0);
   });
 });
 
 describe('Multiply two numbers', () => {
   it('Equals 0', () => {
-    const total = App.multiply(17, 0);
+    const total = multiply(17, 0);
     total.should.equal(0);
   });
   it('Equals 100', () => {
-    const total = App.multiply(10, 10);
+    const total = multiply(10, 10);
     total.should.equal(100);
   });
 });
