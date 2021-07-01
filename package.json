@@ -57,11 +57,13 @@
       "^.+\\.jsx?$": "babel-jest"
     },
     "collectCoverage": true,
+    "verbose": true,
     "coverageReporters": [
       "json",
       "html",
       "lcov"
-    ],
+    ]
+  },
     "repository": {
       "type": "git",
       "url": "git+https://github.com/fgsoftware1/projectX.git"
@@ -76,5 +78,4 @@
     "keywords": [
       "projectx"
     ]
-  }
 }
