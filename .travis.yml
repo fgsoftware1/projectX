@@ -9,11 +9,10 @@ jobs:
     - language: generic
       after_sucess:
         - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov.info
+        - ./cc-test-reporter upload-coverage || true
       before_script:
         - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
         - chmod +x ./cc-test-reporter
         - ./cc-test-reporter before-build
-      after_script:
         - yarn jest test --coverage
         - ./cc-test-reporter report -r lcov coverage/lcov.info
-        - ./cc-test-reporter upload-coverage || true
