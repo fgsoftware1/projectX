@@ -54,19 +54,19 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fgsoftware1/projectX.git"
-  },
-  "author": "Gabriel Aguiar",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fgsoftware1/projectX/issues"
-  },
-  "homepage": "https://github.com/fgsoftware1/projectX#readme",
-  "private": false,
-  "keywords": [
-    "projectx"
-  ]
-}
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/fgsoftware1/projectX.git"
+    },
+    "author": "Gabriel Aguiar",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/fgsoftware1/projectX/issues"
+    },
+    "homepage": "https://github.com/fgsoftware1/projectX#readme",
+    "private": false,
+    "keywords": [
+      "projectx"
+    ]
+  }
 }
